@@ -19,17 +19,16 @@ public class HIPresenceResources {
 	static {
 		try {
 
+			WINDOW_TRAY = ImageIO.read(HIPresence.class.getResourceAsStream("/it/hytale/presence/resources/image-icon.png"));
+
 			WINDOW_XML = HIPresence.class.getResource("/it/hytale/presence/resources/window.fxml");
 			WINDOW_CSS = HIPresence.class.getResource("/it/hytale/presence/resources/window.css");
 
 			WINDOW_LOGO = HIPresence.class.getResource("/it/hytale/presence/resources/image-logo.png");
 			WINDOW_ICON = HIPresence.class.getResource("/it/hytale/presence/resources/image-icon.png");
 
-			WINDOW_TRAY = ImageIO.read(HIPresence.class.getResourceAsStream("/it/hytale/presence/resources/image-icon.png"));
-
 			WINDOW_FONT_1 = HIPresence.class.getResource("/penumbraserif/stylesheet.css");
 			WINDOW_FONT_2 = HIPresence.class.getResource("/notosans/stylesheet.css");
-
 		} catch (Exception exception) {
 			throw new RuntimeException(exception);
 		}

@@ -118,7 +118,6 @@ public class HIPresenceWindow {
 	    		exception.printStackTrace();
 	    	}
 
-
 	    	window.getStylesheets().add(HIPresenceResources.WINDOW_FONT_1.toExternalForm());
 	    	window.getStylesheets().add(HIPresenceResources.WINDOW_FONT_2.toExternalForm());
 	    	window.getStylesheets().add(HIPresenceResources.WINDOW_CSS.toExternalForm());
@@ -391,7 +390,6 @@ public class HIPresenceWindow {
 	        if (update) {
 	        	DiscordRPC.INSTANCE.Discord_UpdatePresence(discordPresence);
 	        }
-
     	}
     }
 
